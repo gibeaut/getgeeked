@@ -8,6 +8,22 @@ body {
   z-index:100;
   height: 50px;
 }
+.header-right {
+  display: inline;
+  padding-left: 70%;
+  font-family: monospace;
+}
+.header-left {
+  display: inline;
+  font-family: fantasy;
+}
 .title-row {
   padding-top: 50px;
+  height: 100px;
+}
+.info-row {
+  height: 100px;
+}
+.video-row {
+  height: 100px;
 }
