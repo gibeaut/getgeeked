@@ -34,10 +34,10 @@ function addListeners() {
   if (broken)
   {
     $mission.text("Our Misssssion");
+    $mission.on('click', function() { fixMission() });
+    $ticket.on('click', function() { ticketClick() })
+    $pop_up.on('click', function() { $(this).hide(); })
   }
-  $mission.on('click', function() { fixMission() });
-  $ticket.on('click', function() { ticketClick() })
-  $pop_up.on('click', function() { $(this).hide(); })
 }
 
 function fixMission() {
