@@ -9,7 +9,7 @@ var hints = [
   "Hint 7",
   "Hint 8"];
 var totalHints = 8;
-var broken = true;
+var broken = false;
 var lastClick = new Date($.now());
 var totalClicks = 0;
 
