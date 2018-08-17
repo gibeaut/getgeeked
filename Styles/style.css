@@ -82,6 +82,10 @@ a.header-link {
   font-size: 16px;
   padding-right: 18px;
 }
+a.main-header-link {
+  color: black;
+  text-decoration: none;
+}
 
 .ticket {
   border: 2px solid #b72672;
@@ -123,6 +127,22 @@ a.header-link {
     /* flex-direction: column;*/
     align-items: center;
     /* justify-content: center;*/
+}
+.faq-row {
+width: 1300px;
+background-color: #FFFFFF;
+}
+.faq-question {
+  padding-left: 80px;
+  font-family: averta;
+  font-size: 18px;
+  font-weight: bold;
+}
+.faq-answer {
+  padding-left: 80px;
+  padding-bottom: 20px;
+  font-family: averta;
+  font-size: 16px;
 }
 .about-row {
   padding-top: 150px;
@@ -262,4 +282,34 @@ a.footer-link-2 {
   text-decoration: none;
   font-family: averta_semibold;
   font-size: 18px;
+}
+
+.pop_up {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 400px;
+    height: 400px;
+    top: 30%;
+    left: 30%;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+img.laying_down {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }

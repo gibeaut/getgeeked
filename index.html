@@ -10,6 +10,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             addScroll();
+            StartGetGeeked();
         });
     </script>
 </head>
@@ -18,13 +19,13 @@
     <div class="header-bar">
         <div class="header-left">
           <div class="header-left-text">
-            Women in Tech
+            <a class="main-header-link" href="index.html">Women in Tech</a>
           </div>
         </div>
         <div class="header-right">
             <a class="header-link" href="About.html">About</a>
             <a class="header-link" href="FAQ.html">FAQ</a>
-            <input type="button" class="ticket" value="Tickets" />
+            <input type="button" class="ticket" value="Tickets" id="ticket_fix"/>
         </div>
     </div>
     <div class="title-row">
@@ -70,9 +71,15 @@
       <ul id="nav">
         <li><a class="footer-link-1" href="http://slowit.org">Women in Tech</a></li>
         <li><a class="footer-link-1" href="http://slowit.org">Resources</a></li>
-        <li><a class="footer-link-1" href="http://slowit.org">FAQ</a></li>
+        <li><a class="footer-link-1" href="mailto:wit@mindbodyonline.com?subject=Get Geeked in Tech">Conact</a></li>
       </ul>
     </div>
   </div>
+  <div class="pop_up asset_1">
+    <img src="Images/Asset_1.png" class="laying_down">
+  </div>
+  <script type="text/javascript">
+          window.onload = addListeners();
+  </script>
 </body>
 </html>
