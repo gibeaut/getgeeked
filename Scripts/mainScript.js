@@ -13,6 +13,7 @@ var broken = false;
 var lastClick = new Date($.now());
 var totalClicks = 0;
 
+
 function addScroll() {
   $(window).scroll(function(e){
     var $el = $('.header-bar');
@@ -61,24 +62,24 @@ function ticketClick() {
 }
 
 function StartGetGeeked(){
-  var start = localStorage.getItem('start_get_geeked');
-  if (start && start != null && start != "false") {
+  var start = sessionStorage.getItem('start_get_geeked');
+  if (start != "false") {
     console.log("Welcome to Get Geeked in Tech QA.");
     console.log("Type GetHint() to get a hint.");
 }
-  localStorage.setItem("start_get_geeked", "false");
+  sessionStorage.setItem("start_get_geeked", "false");
 
 }
 
 function ResetHints() {
-  localStorage.setItem("hints", JSON.stringify(hints));
-  localStorage.setItem("totalHintsLeft", totalHints);
+  sessionStorage.setItem("hints", JSON.stringify(hints));
+  sessionStorage.setItem("totalHintsLeft", totalHints);
 }
 
 function GetHint() {
-var localhints = localStorage.getItem('hints');
+var localhints = sessionStorage.getItem('hints');
 var hintList;
-var totalHintsLeft = localStorage.getItem('totalHintsLeft');;
+var totalHintsLeft = sessionStorage.getItem('totalHintsLeft');;
 
 if (localhints && localhints != "null") {
   hintList = JSON.parse(localhints);
@@ -96,6 +97,6 @@ if (totalHintsLeft > 0) {
 } else {
   console.log("You have no hints left. To reset your hints type ResetHints()");
 }
-localStorage.setItem("hints", JSON.stringify(hintList));
-localStorage.setItem("totalHintsLeft", totalHintsLeft);
+sessionStorage.setItem("hints", JSON.stringify(hintList));
+sessionStorage.setItem("totalHintsLeft", totalHintsLeft);
 }
