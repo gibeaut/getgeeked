@@ -2,6 +2,9 @@
 @font-face { font-family: averta; src: url('../Images/Font/averta_regular.woff') format("woff");}
 @font-face { font-family: averta; src: url('../Images/Font/averta_bold.woff') format("woff"); font-weight: bold;}
 @font-face { font-family: averta_semibold; src: url('../Images/Font/averta_semibold.woff') format("woff");}
+@font-face { font-family: averta_thin; src: url('../Images/Font/averta_thin.woff') format("woff");}
+@font-face { font-family: averta_regular; src: url('../Images/Font/averta_regular.woff') format("woff");}
+@font-face { font-family: averta_extrabold; src: url('../Images/Font/averta_extrabold.woff') format("woff");}
 
 body {
   margin: 0;
@@ -15,7 +18,7 @@ div.full-width {
 h1 {
   text-transform: uppercase;
   color: #232329;
-  font-size: 36px;
+  font-size: 52px;
   margin-bottom: 8px;
 }
 h2 {
@@ -29,21 +32,6 @@ h3 {
     color: #232329;
     font-size: 36px;
     margin-bottom: 16px;
-}
-h4 {
-      text-transform: uppercase;
-      font-family: averta;
-      font-weight: bold;
-      color: #FFFFFF;
-      font-size: 36px;
-      margin-bottom: 8px;
-}
-h5 {
-  margin-top: 0;
-  font-size: 18px;
-  font-family: averta;
-  font-weight: bold;
-  color: #FFFFFF;
 }
 .medium-text {
   margin-top: 0;
@@ -89,7 +77,6 @@ a.main-header-link {
   color: black;
   text-decoration: none;
 }
-
 .ticket {
   border: 2px solid #b72672;
     background-color: #b72672;
@@ -109,159 +96,6 @@ a.main-header-link {
   background-color: white;
   color: black;
 }
-
-.title-row {
-  background-color: white;
-  width: 1300px;
-  height: 700px;
-    display: flex;
-    /* flex-direction: column;*/
-    align-items: center;
-    /* justify-content: center;*/
-}
-.title-info {
-  width: 50%;
-  padding-left: 80px;
-  padding-right: 50px;
-  padding-top: 200px;
-}
-.title-image {
-  width: 650px;
-  height: 554px;
-}
-.info-row {
-  height: 300px;
-  width: 1300px;
-  background-color: #F9F9FC;
-    display: flex;
-    /* flex-direction: column;*/
-    align-items: center;
-    /* justify-content: center;*/
-}
-.faq-row {
-width: 1300px;
-background-color: #FFFFFF;
-}
-.faq-question {
-  padding-left: 80px;
-  font-family: averta;
-  font-size: 18px;
-  font-weight: bold;
-}
-.faq-answer {
-  padding-left: 80px;
-  padding-bottom: 20px;
-  font-family: averta;
-  font-size: 16px;
-}
-.about-row {
-  padding-top: 150px;
-  width: 1300px;
-    height: 371px;
-    background-color: #FFFFFF;
-      display: flex;
-      /* flex-direction: column;*/
-      align-items: center;
-      /* justify-content: center;*/
-}
-.about-image {
-  padding-left: 80px;
-}
-.about-text {
-  padding-left: 80px;
-  width: 500px;
-}
-.mission-row {
-  height: 320px;
-  width: 100%;
-  background-color: #36B4C7;
-  background-image: url("../Images/Blue_banner.jpg");
-    background-repeat: no-repeat;
-    background-size: 1300px 320px;
-    display: flex;
-    /* flex-direction: column;*/
-    align-items: center;
-    /* justify-content: center;*/
-}
-.mission-text {
-padding-left: 80px;
-  width: 650px;
-  padding-bottom: 10px;
-}
-.leadership-row {
-  height: 120px;
-  width: 1300px;
-  background-color: white;
-}
-.chair-row {
-  height: 420px;
-  width: 1300px;
-  background-color: white;
-    display: flex;
-    /* flex-direction: column;*/
-    align-items: center;
-    /* justify-content: center;*/
-}
-.activity-list {
-  font-family: averta;
-  width: 50%
-}
-.event-details {
-  width: 50%;
-  padding-left: 80px;
-}
-
-ul {
-  /*list-style-type: none;*/
-}
-li {
-  /*line-height: 30px;
-  padding-bottom: 24px;*/
-}
-
-div.activity-text {
-  padding-left: 16px;
-  display: inline;
-  padding-bottom: 50px;
-  height: 30px;
-  font-size: 24px;
-  font-family: averta_semibold;
-  color: #4A4A4A;
-  white-space: nowrap;
-}
-
-.video-row {
-width: 1300px;
-  background-color: white;
-  height: 400px;
-    display: flex;
-    /* flex-direction: column;*/
-    align-items: center;
-    /* justify-content: center;*/
-}
-.video-area {
-  padding-left: 80px;
-}
-.video-details {
-  width: 450px;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-.footer-row {
-  width:100%;
-  background-color: black;
-}
-.footer-bar {
-  background-color: black;
-  height: 150px;
-  width: 1300px;
-  padding-top: 5%;
-}
-.footer-image {
-  width: 100%;
-  text-align: center;
-}
-
 #nav {
     display: table;
     height: 16px;
@@ -283,21 +117,6 @@ width: 1300px;
         display: block;
         width: 100%;
     }
-}
-
-a.footer-link-1 {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: averta_semibold;
-  font-size: 24px;
-}
-
-a.footer-link-2 {
-  color: #FFFFFF;
-  opacity: .65;
-  text-decoration: none;
-  font-family: averta_semibold;
-  font-size: 18px;
 }
 
 .pop_up {
