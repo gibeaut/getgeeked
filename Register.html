@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>MINDBODY Get Geeked in Tech</title>
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="Styles/register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Scripts/mainScript.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            addScroll();
+        });
+    </script>
+</head>
+<body>
+    <div class="header-bar">
+        <div class="header-left">
+          <div class="header-left-text">
+            <a class="main-header-link" href="index.html">Women in Tech</a>
+          </div>
+        </div>
+        <div class="header-right">
+            <a class="header-link" href="About.html">About</a>
+            <a class="header-link" href="FAQ.html">FAQ</a>
+            <input type="button" class="ticket" value="Tickets" id="ticket_fix"/>
+        </div>
+    </div>
+    <div class="form-area"  style="padding-top: 150px; padding-left: 80px">
+      <h1>Register</h1>
+      <h2>Fill out the form and hit submit to Register. </h2>
+      <div class="register">
+      <label for="name" value="Name">Name</label>
+      <input type="text" name="name" id="name" placeholder="   Name">
+    </div>
+    <div class="register">
+      <label for="email" value="Email">Email</label>
+      <input type="text" name="email" id="email" placeholder="   Email">
+</div>
+<div style="padding-top: 16px">
+      <input type="button" class="ticket" value="Submit" style="width:500px;"/>
+    </div>
+    </div>
+  <div class="pop_up">
+  </div>
+  <script type="text/javascript">
+          window.onload = addListeners();
+  </script>
+</body>
+</html>
