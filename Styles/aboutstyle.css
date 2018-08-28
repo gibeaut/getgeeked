@@ -44,11 +44,12 @@ h4.chairs {
     /* justify-content: center;*/
 }
 .about-row {
-  padding-top: 100px;
+  padding-top: 120px;
   height: 390px;
   width: 100%;
   background-image: url("../Images/TransparentGears_about.png");
     background-repeat: no-repeat;
+    background-size: 959px 390px;
     z-index: 0;
 background-position: left;
 -webkit-background-size: cover;
@@ -68,12 +69,12 @@ background-size: cover;
   width: 600px;
 }
 .mission-row {
-  height: 470px;
+  height: 393px;
   width: 100%;
   background-color: #36B4C7;
   background-image: url("../Images/banner_about.png");
     background-repeat: no-repeat;
-    background-size: 1300px 700px;
+    background-size: 1300px 393px;
     display: flex;
     /* flex-direction: column;*/
     align-items: center;

@@ -51,9 +51,9 @@ h5 {
   height: 636px;
 }
 .faq-image {
-  padding-top: 100px;S
-  width: 417px;
-  height: 1197px;
+  padding-top: 150px;
+  width: 281px;
+  height: 795px;
   vertical-align: middle;
 }
 .faq-area {
@@ -79,4 +79,5 @@ background-color: #FFFFFF;
   padding-bottom: 20px;
   font-family: averta;
   font-size: 16px;
+  line-height: 24px;
 }
