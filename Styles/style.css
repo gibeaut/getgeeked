@@ -1,10 +1,9 @@
 
 @font-face { font-family: averta; src: url('../Images/averta_regular.woff') format("woff");}
-@font-face { font-family: averta2; src: url('../Images/averta_bold.woff') format("woff");}
-@font-face { font-family: averta3; src: url('../Images/averta_semibold.woff') format("woff");}
-@font-face { font-family: averta_thin; src: url('../Images/averta_thin.woff') format("woff");}
-@font-face { font-family: averta_regular; src: url('../Images/averta_regular.woff') format("woff");}
-@font-face { font-family: averta_extrabold; src: url('../Images/averta_extrabold.woff') format("woff");}
+@font-face { font-family: averta; src: url('../Images/averta_bold.woff') format("woff"); font-weight: bold;}
+@font-face { font-family: averta; src: url('../Images/averta_semibold.woff') format("woff"); font-weight: lighter;}
+@font-face { font-family: averta; src: url('../Images/averta_thin.woff') format("woff"); font-weight: 100;}
+@font-face { font-family: averta; src: url('../Images/Font/averta_extrabold.woff') format("woff"); font-weight: bolder;}
 
 body {
   margin: 0;
@@ -23,7 +22,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-family: averta3;
+  font-family: averta_semibold;
   color: #4A4A4A;
   margin-bottom: 32px;
 }
@@ -36,7 +35,8 @@ h3 {
 .medium-text {
   margin-top: 0;
   font-size: 24px;
-  font-family: averta2;
+  font-family: averta;
+  font-weight: bold;
   color: #FFFFFF;
 }
 
@@ -60,13 +60,14 @@ h3 {
 }
 .header-left-text {
   display: inline;
-  font-family: averta2;
+  font-family: averta;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
 }
 a.header-link {
   color: black;
-  font-family: averta;
+  font-family: averta_semibold;
   text-decoration: none;
   font-size: 16px;
   padding-right: 18px;
@@ -93,7 +94,7 @@ a.consent-link:hover {
   padding-right: 32px;
   width: 120px;
   height: 40px;
-  font-family: averta3;
+  font-family: averta_semibold;
   font-size: 16px;
 }
 .ticket:hover {
