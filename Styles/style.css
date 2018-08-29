@@ -1,13 +1,13 @@
 
 @font-face { font-family: averta; src: url('../Images/averta_regular.woff') format("woff");}
-@font-face { font-family: averta; src: url('../Images/averta_bold.woff') format("woff"); font-weight: bold;}
-@font-face { font-family: averta; src: url('../Images/averta_semibold.woff') format("woff"); font-weight: lighter;}
+@font-face { font-family: averta; src: url('../Images/averta_bold.woff') format("woff"); font-weight: 700;}
+@font-face { font-family: averta; src: url('../Images/averta_semibold.woff') format("woff"); font-weight: 600;}
 @font-face { font-family: averta; src: url('../Images/averta_thin.woff') format("woff"); font-weight: 100;}
-@font-face { font-family: averta; src: url('../Images/Font/averta_extrabold.woff') format("woff"); font-weight: bolder;}
+@font-face { font-family: averta; src: url('../Images/Font/averta_extrabold.woff') format("woff"); font-weight: 800;}
 
 body {
   margin: 0;
-  font-family: averta;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
 }
 
 div.full-width {
@@ -22,7 +22,8 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-family: averta_semibold;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-weight: 600;
   color: #4A4A4A;
   margin-bottom: 32px;
 }
@@ -35,8 +36,8 @@ h3 {
 .medium-text {
   margin-top: 0;
   font-size: 24px;
-  font-family: averta;
-  font-weight: bold;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
@@ -67,7 +68,8 @@ h3 {
 }
 a.header-link {
   color: black;
-  font-family: averta_semibold;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-weight: 600;
   text-decoration: none;
   font-size: 16px;
   padding-right: 18px;
@@ -94,7 +96,8 @@ a.consent-link:hover {
   padding-right: 32px;
   width: 120px;
   height: 40px;
-  font-family: averta_semibold;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-weight: 600;
   font-size: 16px;
 }
 .ticket:hover {
