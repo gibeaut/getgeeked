@@ -94,6 +94,7 @@ padding-left: 80px;
 .chair-row {
   height: 420px;
   width: 1300px;
+  padding-bottom: 128px;
   background-color: white;
     display: flex;
     /* flex-direction: column;*/

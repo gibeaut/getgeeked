@@ -68,7 +68,7 @@ h6 {
   width: 100%;
   background-color: #36B4C7;
   background-image: url("../Images/banne_home.png");
-    background-size: 2000px 560px;
+    background-size: 1538px 560px;
     display: flex;
     /* flex-direction: column;*/
     align-items: center;
@@ -103,6 +103,7 @@ div.activity-text {
 .video-row {
 padding-top: 85px;
   background-color: white;
+  padding-bottom: 128px;
   height: 400px;
     display: flex;
     /* flex-direction: column;*/
