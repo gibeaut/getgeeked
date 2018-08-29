@@ -6,7 +6,8 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-family: averta_semibold;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-weight: 600;
   color: #4A4A4A;
   margin-bottom: 32px;
 }
@@ -18,8 +19,8 @@ h3 {
 }
 h4 {
       text-transform: uppercase;
-      font-family: averta;
-      font-weight: bold;
+      font-family: 'averta', 'Nunito Sans', sans-serif;
+      font-weight: 700;
       color: #FFFFFF;
       font-size: 36px;
       margin-bottom: 8px;
@@ -27,8 +28,8 @@ h4 {
 h5 {
   margin-top: 0;
   font-size: 18px;
-  font-family: averta;
-  font-weight: bold;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-weight: 700;
   color: #FFFFFF;
 }
 .title-row {
@@ -70,14 +71,14 @@ background-color: #FFFFFF;
 }
 .faq-question {
   padding-left: 80px;
-  font-family: averta;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 .faq-answer {
   padding-left: 80px;
   padding-bottom: 20px;
-  font-family: averta;
+  font-family: 'averta', 'Nunito Sans', sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
