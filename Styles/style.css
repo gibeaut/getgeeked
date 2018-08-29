@@ -1,10 +1,10 @@
 
-@font-face { font-family: averta; src: url('../Images/Font/averta_regular.woff') format("woff");}
-@font-face { font-family: averta; src: url('../Images/Font/averta_bold.woff') format("woff"); font-weight: bold;}
-@font-face { font-family: averta_semibold; src: url('../Images/Font/averta_semibold.woff') format("woff");}
-@font-face { font-family: averta_thin; src: url('../Images/Font/averta_thin.woff') format("woff");}
-@font-face { font-family: averta_regular; src: url('../Images/Font/averta_regular.woff') format("woff");}
-@font-face { font-family: averta_extrabold; src: url('../Images/Font/averta_extrabold.woff') format("woff");}
+@font-face { font-family: averta; src: url('../Images/averta_regular.woff') format("woff");}
+@font-face { font-family: averta; src: url('../Images/averta_bold.woff') format("woff"); font-weight: bold;}
+@font-face { font-family: averta_semibold; src: url('../Images/averta_semibold.woff') format("woff");}
+@font-face { font-family: averta_thin; src: url('../Images/averta_thin.woff') format("woff");}
+@font-face { font-family: averta_regular; src: url('../Images/averta_regular.woff') format("woff");}
+@font-face { font-family: averta_extrabold; src: url('../Images/averta_extrabold.woff') format("woff");}
 
 body {
   margin: 0;
