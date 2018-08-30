@@ -135,12 +135,9 @@ a.consent-link:hover {
     height: 400px;
     top: 30%;
     left: 30%;
-    padding: 20px;
-    border: 3px solid black;
     border-radius: 25px;
     align-items: center;
     text-align: center;
-    background-color: white;
     z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }

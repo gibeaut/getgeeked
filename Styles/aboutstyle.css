@@ -70,12 +70,12 @@ background-size: cover;
   width: 600px;
 }
 .mission-row {
-  height: 393px;
+  height: 549px;
   width: 100%;
   background-color: #36B4C7;
   background-image: url("../Images/banner_about.png");
     background-repeat: no-repeat;
-    background-size: 1300px 393px;
+    background-size: 1813px 549px;
     display: flex;
     /* flex-direction: column;*/
     align-items: center;
