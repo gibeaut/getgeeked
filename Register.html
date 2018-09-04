@@ -33,18 +33,23 @@
       <h2>Fill out the form and hit submit to Register. </h2>
       <div class="register">
       <label for="name" value="Name">Name</label>
-      <input type="text" name="name" id="name" placeholder="   Name">
+      <input type="text" name="name" id="name" placeholder="Name">
+      <div class="error-message" id="nameError">*Name is required!</div>
     </div>
     <div class="register">
       <label for="email" value="Email">Email</label>
-      <input type="text" name="email" id="email" placeholder="   Email">
+      <input type="text" name="email" id="email" placeholder="Email" >
+      <div class="error-message" id="emailError">*Email is required!</div>
 </div>
 <div style="padding-top: 16px">
-      <input type="button" class="ticket" value="Submit" style="width:500px;"/>
+      <input type="button" class="faketicket" id="fakeTicket" value="Submit" />
     </div>
     </div>
   <div class="pop_up">
   </div>
+<div class="pop_up asset_4">
+  <img src="Images/bugs_outline/Asset_4.png" class="bug">
+</div>
   <script type="text/javascript">
           window.onload = addListeners();
   </script>
