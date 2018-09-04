@@ -135,14 +135,13 @@ a.consent-link:hover {
     height: 400px;
     top: 30%;
     left: 30%;
-    border-radius: 25px;
     align-items: center;
     text-align: center;
     z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
 
-img.laying_down {
+img.bug {
     max-height: 100%;
     max-width: 100%;
     width: auto;
