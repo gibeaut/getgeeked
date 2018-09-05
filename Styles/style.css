@@ -152,3 +152,16 @@ img.bug {
     right: 0;
     margin: auto;
 }
+
+#clue8 {
+  position: relative;
+  float: left;
+}
+
+#footoverlay {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  cursor: zoom-in;
+}

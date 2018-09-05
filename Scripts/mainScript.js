@@ -7,7 +7,7 @@ var hints = [
     "Hint 5",
     "Hint 6",
     "Hint 7",
-    "Hint 8"
+    "Did you find the place with socks?"
 ];
 var totalHints = 8;
 var lastClick = new Date($.now());
@@ -51,6 +51,7 @@ function addScroll() {
 function addListeners() {
     var $mission = $('#mission_fix');
     var $snacks = $('#snacks');
+    var $footoverlay = $('#footoverlay');
     var $tickets = $('.ticket');
     var $pop_up = $('.pop_up');
     var broken = sessionStorage.getItem("isBroken");
@@ -66,6 +67,11 @@ function addListeners() {
         $snacks.on('click', function() {
             snackClick()
         })
+
+        $footoverlay.on('click', function() {
+            footClick()
+        })
+
         $tickets.on('click', function() { window.location="Register.html"; });
         $pop_up.on('click', function() {
             $(this).hide();
@@ -102,6 +108,13 @@ function snackClick() {
             }
             return false;
         }
+    }
+}
+
+function footClick() {
+    var broken = sessionStorage.getItem("isBroken");
+    if (broken == "true") {
+        $('.asset_8').show();
     }
 }
 
