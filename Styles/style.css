@@ -204,3 +204,16 @@ img.bug {
 .input-invalid{
   border: 2px solid #ff0000;
 }
+
+#clue8 {
+  position: relative;
+  float: left;
+}
+
+#footoverlay {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  cursor: zoom-in;
+}
