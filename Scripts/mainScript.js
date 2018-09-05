@@ -2,7 +2,7 @@
 var hints = [
     "Click the snacks five times fast, and see if everything will be a blast.",
     "Our Mission is ssstrong but something is wrong, if you click the mistake you can fix it.",
-    "Hint 3",
+    "Our happiness is easy to see. You can count on it, easy as 1 2 3. Try pressing shift and the letter C.",
     "Tickets, tickets, get them here! Try using email without any fear!",
     "Hint 5",
     "Hint 6",
@@ -55,6 +55,7 @@ function addListeners() {
     var $pop_up = $('.pop_up');
     var broken = sessionStorage.getItem("isBroken");
     var $fakeTicket = $('#fakeTicket');
+    var $submit_button=$('.submit-button');
     //Turn off any existing ticket link
     $tickets.off('click');
     if (broken == "true") {
@@ -74,6 +75,10 @@ function addListeners() {
             showAllBugs(event);
         })
         $fakeTicket.on('click', function() { checkForm(); })
+
+        window.addEventListener("keypress", openModalKeyPress);
+        window.addEventListener("click", windowOnClick);
+        $submit_button.on('click', function() {checkNumberGuess();} );
     } else {
       $tickets.on('click', function() { window.location="http://www.kellyirish.com"; });
     }
@@ -237,4 +242,36 @@ function validateEmail(email) {
     if (!re.test(String(email).toLowerCase())){
       $('.asset_4').show();
     }
+}
+
+function toggleModal() {
+  var modal = document.querySelector(".modal");
+  modal.classList.toggle("show-modal");
+
+  var $input = $('#number-input');
+  $input.val("");
+  $input.removeClass("input-invalid")
+}
+
+function windowOnClick(event) {
+  var modal = document.querySelector(".modal");
+  if (event.target === modal) {
+      toggleModal();
+  }
+}
+function openModalKeyPress(event){
+    if(event.key == "C"){
+      toggleModal();
+    }
+}
+
+function checkNumberGuess(){
+  var $input = $('#number-input');
+  if($input.val() == "5"){
+    toggleModal();
+    $('.asset_3').show();
+  }
+  else{
+    $input.addClass("input-invalid")
+  }
 }
