@@ -114,7 +114,7 @@ function addListeners() {
     }
     else {
       // When not broken the ticket button directs to EventBright
-      $tickets.on('click', function() { window.location="http://www.eventbright.com"; });
+      $tickets.on('click', function() { window.location="https://www.eventbright.com"; });
     }
 }
 
