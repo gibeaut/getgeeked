@@ -5,7 +5,7 @@ var hints = [
     "Our happiness is easy to see. You can count on it, easy as 1 2 3. Try pressing shift and the letter C.",
     "Tickets, tickets, get them here! Try using email without any fear!",
     "Hint 5",
-    "Hint 6",
+    "One FAQ is really a riddle, click on the question right in the middle.",
     "Hint 7",
     "Did you find the place with socks?"
 ];
@@ -57,14 +57,21 @@ function addListeners() {
     var broken = sessionStorage.getItem("isBroken");
     var $fakeTicket = $('#fakeTicket');
     var $submit_button=$('.submit-button');
+
+    var $question = $('#question');
+    var $answer = $('#answer');
+    var $answerButton = $('.answer-button');
+
     //Turn off any existing ticket link
     $tickets.off('click');
     if (broken == "true") {
+       // When broken is true Mission on Aboun page is misspelled
         $mission.text("Our Misssssion");
         $mission.on('click', function() {
             fixMission()
         });
 
+        // Snacks keywork click
         $snacks.on('click', function() {
             snackClick()
         })
@@ -73,20 +80,41 @@ function addListeners() {
             footClick()
         })
 
+        // Ticket Button redirect on all pages
         $tickets.on('click', function() { window.location="Register.html"; });
+        //Bug Pop-Up an each Page
         $pop_up.on('click', function() {
             $(this).hide();
         })
+
+        //Konami Code Listener
         $(document).on('keyup', function() {
             showAllBugs(event);
         })
+
+        // Registartion form Check
         $fakeTicket.on('click', function() { checkForm(); })
 
         window.addEventListener("keypress", openModalKeyPress);
         window.addEventListener("click", windowOnClick);
         $submit_button.on('click', function() {checkNumberGuess();} );
-    } else {
-      $tickets.on('click', function() { window.location="http://www.kellyirish.com"; });
+
+        //FAQ Question and Answer
+        setQAChange($question, $answer);
+        $question.on('click', function() {
+            showQA();
+        });
+        $answer.on('click', function() {
+            showQA();
+        });
+        $answerButton.on('click', function() {
+            checkAnswer();
+        });
+
+    }
+    else {
+      // When not broken the ticket button directs to EventBright
+      $tickets.on('click', function() { window.location="http://www.eventbright.com"; });
     }
 }
 
@@ -287,4 +315,26 @@ function checkNumberGuess(){
   else{
     $input.addClass("input-invalid")
   }
+}
+
+function setQAChange($question, $answer){
+  $question.text("What did the 0 say to the 8?");
+  $answer.text("Find the extra letters here and rearange them to form the answer. There are somee thiings that willl turnn a zeero intto an eight, bbut only one ccan work here.");
+}
+
+function showQA(){
+  $(".qa_broken").show();
+}
+function checkAnswer(){
+    var $answerBox = $('.answer-box');
+    var answer = $.trim($answerBox.val().toLowerCase());
+    if (answer == 'nice belt') {
+      $(".qa_broken").hide();
+      $('.asset_6').show();
+    }
+    else {
+      $answerBox.effect("shake", { times:3 }, 30);
+      $answerBox.val("");
+      $answerBox.attr("placeholder", "Try Again").placeholder();
+    }
 }

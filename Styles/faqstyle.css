@@ -82,3 +82,27 @@ background-color: #FFFFFF;
   font-size: 16px;
   line-height: 24px;
 }
+.answer-button {
+  border: 2px solid #b72672;
+    background-color: #b72672;
+    color: white;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.answer-button:hover {
+  background-color: white;
+  color: black;
+}
+.answer-box {
+     margin-right: 20px;
+    height: 24px;
+    width: 300px;
+}
+.qa_broken {
+    padding-left: 80px;
+    padding-bottom: 20px;
+    display: none;
+}

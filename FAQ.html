@@ -7,6 +7,7 @@
       <link rel="stylesheet" type="text/css" href="Styles/style.css">
       <link rel="stylesheet" type="text/css" href="Styles/faqstyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
       <script src="Scripts/mainScript.js"></script>
       <script type="text/javascript">
          $(document).ready(function () {
@@ -57,11 +58,12 @@
                           <a class="consent-link" href="Documents/CONFIDENTIALITY AGREEMENT AND RELEASE (Get Geeked in Tech 101118)).pdf" target="_blank">Download one here</a>, or grab a copy at the event (just make sure your parent/guardian is there to sign it). To make the entry line go faster, we recommend you bringing it ready to go!
                        </div>
                        <div class="faq-question">
-                          What if I’m a student that’s 18 or older?
+                          <span id="question">What if I’m a student that’s 18 or older?</span>
                        </div>
                        <div class="faq-answer">
-                          You don’t need a consent form. Just bring your ID.
+                          <span id="answer">You don’t need a consent form. Just bring your ID.</span>
                        </div>
+                       <div class="qa_broken"><input class="answer-box" type="textbox" /><input class="answer-button" type="button" value="Answer"/></div>
                        <div class="faq-question">
                           I’m a parent, guardian, or teacher—what do I need to do?
                        </div>
@@ -89,8 +91,9 @@
             </div>
          </div>
        </div>
-      <div class="pop_up">
-      </div>
+       <div class="pop_up asset_6">
+         <img src="Images/bugs_outline/Asset_6.png" class="bug">
+       </div>
       <script type="text/javascript">
          window.onload = addListeners();
       </script>
