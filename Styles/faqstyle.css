@@ -62,8 +62,7 @@ vertical-align: middle;
   position: absolute;
   padding-top: 100px;
   display: inline;
-  height: 1500px;
-  width: 500px;
+  /*width: 500px;*/
 }
 .faq-row {
 width: 700px;
@@ -105,4 +104,10 @@ background-color: #FFFFFF;
     padding-left: 80px;
     padding-bottom: 20px;
     display: none;
+}
+
+.gear {
+  height: 24px;
+  width: 24px;
+  display: block;
 }

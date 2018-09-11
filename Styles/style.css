@@ -217,3 +217,23 @@ img.bug {
   bottom: 0;
   cursor: zoom-in;
 }
+
+.rocking {
+  display:inline-block;
+}
+
+.rocking:hover {
+  animation: sway 1000ms infinite;
+}
+
+@keyframes sway {
+  0% {
+    margin-right: 0;
+  }
+  50% {
+    margin-right: 20px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}

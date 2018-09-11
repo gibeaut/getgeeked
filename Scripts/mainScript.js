@@ -4,9 +4,9 @@ var hints = [
     "Our Mission is ssstrong but something is wrong, if you click the mistake you can fix it.",
     "Our happiness is easy to see. You can count on it, easy as 1 2 3. Try pressing shift and the letter C.",
     "Tickets, tickets, get them here! Try using email without any fear!",
-    "Hint 5",
+    "Look to the left, look to the right. Everybody now! Don't let your head spin too much on this one. But it's ok if everyone else's does.",
     "One FAQ is really a riddle, click on the question right in the middle.",
-    "Hint 7",
+    "Did you find the bug that rocks?",
     "Did you find the place with socks?"
 ];
 var totalHints = 8;
@@ -14,6 +14,7 @@ var lastClick = new Date($.now());
 var totalClicks = 0;
 var konamiCcode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 var lastKeyIndex = 0;
+var allSpinning = true;
 
 function getParameters() {
     var urlParams = new URLSearchParams(window.location.search);
@@ -53,6 +54,7 @@ function addListeners() {
     var $snacks = $('#snacks');
     var $footoverlay = $('#footoverlay');
     var $tickets = $('.ticket');
+    var $headshot = $('.headshot');
     var $pop_up = $('.pop_up');
     var broken = sessionStorage.getItem("isBroken");
     var $fakeTicket = $('#fakeTicket');
@@ -62,6 +64,8 @@ function addListeners() {
     var $answer = $('#answer');
     var $answerButton = $('.answer-button');
 
+    var $title_image=$('.title-image');
+    
     //Turn off any existing ticket link
     $tickets.off('click');
     if (broken == "true") {
@@ -87,6 +91,10 @@ function addListeners() {
             $(this).hide();
         })
 
+        $headshot.on('click', function(event) {
+            headshotClick(event.target)
+        })
+
         //Konami Code Listener
         $(document).on('keyup', function() {
             showAllBugs(event);
@@ -98,6 +106,12 @@ function addListeners() {
         window.addEventListener("keypress", openModalKeyPress);
         window.addEventListener("click", windowOnClick);
         $submit_button.on('click', function() {checkNumberGuess();} );
+
+        //Lady graphic rocks on hover
+        $title_image.addClass("rocking")
+        $title_image.on('click', function() {
+          ladyClick()
+        })
 
         //FAQ Question and Answer
         setQAChange($question, $answer);
@@ -148,6 +162,38 @@ function footClick() {
     var broken = sessionStorage.getItem("isBroken");
     if (broken == "true") {
         $('.asset_8').show();
+    }
+}
+
+function ladyClick() {
+  var broken = sessionStorage.getItem("isBroken");
+  if (broken == "true") {
+      $('.asset_5').show();
+  }
+}
+
+function stopSpinning(element) {
+    if ($(element).hasClass("spinning")) {
+        $(element).removeClass("spinning");
+    }
+}
+
+function headshotClick(element) {
+    var broken = sessionStorage.getItem("isBroken");
+    if (broken == "true") {
+        $(element).addClass("spinning");
+        setTimeout(function() { stopSpinning($(element)) }, 4000);
+        var $headshot = $('.headshot');
+        allSpinning = true;
+        $headshot.each(function() {
+            if (!$(this).hasClass("spinning")) {
+                allSpinning = false;
+                return false;
+            }
+        });
+        if (allSpinning) {
+            $('.asset_5').show();
+        }
     }
 }
 

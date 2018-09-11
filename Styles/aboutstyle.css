@@ -109,3 +109,20 @@ padding-left: 80px;
   width: 50%;
   padding-left: 80px;
 }
+.headshot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.spinning {
+  -webkit-animation: rotation 1s 5 linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+    to {
+        -webkit-transform: rotateY(359deg);
+    }
+}
