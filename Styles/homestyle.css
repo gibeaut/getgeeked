@@ -2,7 +2,7 @@
 
 h4 {
       text-transform: uppercase;
-      font-family: 'averta', 'Nunito Sans', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
       font-weight: 700;
       color: #FFFFFF;
       font-size: 48px;
@@ -11,14 +11,14 @@ h4 {
 h5 {
   margin-top: 0;
   font-size: 36px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   color: #FFFFFF;
   margin-bottom: 25px;
 }
 h6 {
   margin-top: 0;
   font-size: 36px;
-  font-family:  averta;
+  font-family:  'Nunito Sans', sans-serif;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
@@ -28,7 +28,7 @@ ul {
 .small-text {
   margin-top: 0;
   font-size: 26px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   margin-bottom: 10px;
@@ -83,7 +83,7 @@ padding-left: 80px;
   padding-bottom: 10px;
 }
 .activity-list {
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   width: 50%
 }
 .event-details {
@@ -98,7 +98,7 @@ div.activity-text {
   padding-bottom: 50px;
   height: 30px;
   font-size: 24px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: #4A4A4A;
   white-space: nowrap;
@@ -124,7 +124,7 @@ padding-top: 85px;
 }
 h3.video {
       text-transform: uppercase;
-      font-family: 'averta', 'Nunito Sans', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
       font-weight: 800;
       color: #232329;
       font-size: 40px;

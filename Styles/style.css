@@ -1,13 +1,7 @@
 
-@font-face { font-family: averta; src: url('../Images/averta_regular.woff') format("woff");}
-@font-face { font-family: averta; src: url('../Images/averta_bold.woff') format("woff"); font-weight: 700;}
-@font-face { font-family: averta; src: url('../Images/averta_semibold.woff') format("woff"); font-weight: 600;}
-@font-face { font-family: averta; src: url('../Images/averta_thin.woff') format("woff"); font-weight: 100;}
-@font-face { font-family: averta; src: url('../Images/averta_extrabold.woff') format("woff"); font-weight: 800;}
-
 body {
   margin: 0;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 div.full-width {
@@ -22,7 +16,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: #4A4A4A;
   margin-bottom: 32px;
@@ -36,7 +30,7 @@ h3 {
 .medium-text {
   margin-top: 0;
   font-size: 24px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 700;
   color: #FFFFFF;
 }
@@ -61,14 +55,14 @@ h3 {
 }
 .header-left-text {
   display: inline;
-  font-family: averta;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
 }
 a.header-link {
   color: black;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   text-decoration: none;
   font-size: 16px;
@@ -77,7 +71,7 @@ a.header-link {
 a.main-header-link {
   color: black;
   text-decoration: none;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   text-transform: uppercase;
 }
 a.consent-link {
@@ -98,7 +92,7 @@ a.consent-link:hover {
   padding-right: 16px;
   width: 120px;
   height: 40px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
@@ -184,7 +178,7 @@ img.bug {
   border-radius: 5px;
   width: 70px;
   height: 24px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   font-size: 16px;
   text-align: center;

@@ -1,7 +1,7 @@
 
 h4 {
       text-transform: uppercase;
-      font-family: 'averta', 'Nunito Sans', sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
       font-weight: 700;
       color: #FFFFFF;
       font-size: 48px;
@@ -10,7 +10,7 @@ h4 {
 h5 {
   margin-top: 0;
   font-size: 28px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: bold;
   color: #FFFFFF;
 }
@@ -24,14 +24,14 @@ h4.chairs {
   margin-top: 5px;
   font-size: 14px;
   color: black;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 100;
   text-transform: none;
 }
 .medium-text {
   margin-top: 0;
   font-size: 24px;
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: #FFFFFF;
 }
@@ -102,7 +102,7 @@ padding-left: 80px;
     /* justify-content: center;*/
 }
 .activity-list {
-  font-family: 'averta', 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   width: 50%
 }
 .event-details {
