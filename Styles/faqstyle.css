@@ -67,6 +67,8 @@ vertical-align: middle;
 .faq-row {
 width: 700px;
 background-color: #FFFFFF;
+/* Added to giv a little padding at the bottom when the copy was changed.*/
+padding-bottom: 80px;
 }
 .faq-question {
   padding-left: 80px;
