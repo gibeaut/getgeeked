@@ -65,7 +65,7 @@ function addListeners() {
     var $answerButton = $('.answer-button');
 
     var $title_image=$('.title-image');
-    
+
     //Turn off any existing ticket link
     $tickets.off('click');
     if (broken == "true") {
@@ -96,7 +96,7 @@ function addListeners() {
         })
 
         //Konami Code Listener
-        $(document).on('keyup', function() {
+        $(document).on('keyup', function(event) {
             showAllBugs(event);
         })
 
