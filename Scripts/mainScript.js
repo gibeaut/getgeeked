@@ -4,7 +4,7 @@ var hints = [
     "Our Mission is ssstrong but something is wrong, if you click the mistake you can fix it.",
     "Our happiness is easy to see. You can count on it, easy as 1 2 3. Try pressing shift and the letter C.",
     "Tickets, tickets, get them here! Try using email without any fear!",
-    "Hint 5",
+    "Did oyou find the bug that rocks?",
     "One FAQ is really a riddle, click on the question right in the middle.",
     "Hint 7",
     "Did you find the place with socks?"
@@ -62,6 +62,8 @@ function addListeners() {
     var $answer = $('#answer');
     var $answerButton = $('.answer-button');
 
+    var $title_image=$('.title-image');
+    
     //Turn off any existing ticket link
     $tickets.off('click');
     if (broken == "true") {
@@ -98,6 +100,12 @@ function addListeners() {
         window.addEventListener("keypress", openModalKeyPress);
         window.addEventListener("click", windowOnClick);
         $submit_button.on('click', function() {checkNumberGuess();} );
+
+        //Lady graphic rocks on hover
+        $title_image.addClass("rocking")
+        $title_image.on('click', function() {
+          ladyClick()
+        })
 
         //FAQ Question and Answer
         setQAChange($question, $answer);
@@ -149,6 +157,13 @@ function footClick() {
     if (broken == "true") {
         $('.asset_8').show();
     }
+}
+
+function ladyClick() {
+  var broken = sessionStorage.getItem("isBroken");
+  if (broken == "true") {
+      $('.asset_5').show();
+  }
 }
 
 function showAllBugs(e) {
