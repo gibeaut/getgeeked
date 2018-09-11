@@ -381,6 +381,6 @@ function checkAnswer(){
     else {
       $answerBox.effect("shake", { times:3 }, 30);
       $answerBox.val("");
-      $answerBox.attr("placeholder", "Try Again").placeholder();
+      $answerBox.attr("placeholder", "Try Again");
     }
 }
