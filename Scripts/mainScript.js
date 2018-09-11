@@ -114,7 +114,7 @@ function addListeners() {
     }
     else {
       // The ticket button directs to EventBright, unless broken
-      $tickets.on('click', function() { window.location="http://www.eventbright.com"; });
+      $tickets.on('click', function() { window.location="https://www.eventbrite.com/e/get-geeked-in-tech-2018-tickets-49747531205"; });
     }
 }
 
