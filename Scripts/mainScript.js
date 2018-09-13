@@ -1,6 +1,6 @@
 // Global Variables
 var hints = [
-    "Click the snacks five times fast, and see if everything will be a blast.",
+    "Click the snacks really fast, and see if anything runs right past.",
     "Our Mission is ssstrong but something is wrong, if you click the mistake you can fix it.",
     "Our happiness is easy to see. You can count on it, easy as 1 2 3. Try pressing shift and the letter C.",
     "Tickets, tickets, get them here! Try using email without any fear!",
@@ -79,6 +79,7 @@ function addListeners() {
         $snacks.on('click', function() {
             snackClick()
         })
+        $snacks.addClass('snacks');
 
         $footoverlay.on('click', function() {
             footClick()
@@ -152,6 +153,14 @@ function snackClick() {
             if (totalClicks >= 5) {
                 $('.asset_1').show();
                 totalClicks = 0;
+                var width = "+=" + $(document).width();
+    $(".asset_1").animate({
+    left: width
+  }, 2000, function() {
+    var topNumber = $(".asset_1").offset().top;
+
+    $(".asset_1").css({top: topNumber, left: 5, position:'absolute'});
+  });
             }
             return false;
         }
@@ -365,7 +374,7 @@ function checkNumberGuess(){
 
 function setQAChange($question, $answer){
   $question.text("What did the 0 say to the 8?");
-  $answer.text("Find the extra letters here and rearange them to form the answer. There are somee thiings that willl turnn a zeero intto an eight, bbut only one ccan work here.");
+  $answer.text("Find the extra letters here and rearrange them to form the answer. There are somee thiings that willl turnn a zeero intto an eight, bbut only one ccan work here.");
 }
 
 function showQA(){

@@ -11,7 +11,7 @@ div.full-width {
 h1 {
   text-transform: uppercase;
   color: #232329;
-  font-size: 52px;
+  font-size: 48px;
   margin-bottom: 8px;
 }
 h2 {
@@ -19,7 +19,7 @@ h2 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: #4A4A4A;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 h3 {
     text-transform: uppercase;
@@ -212,6 +212,15 @@ img.bug {
   height: 30px;
   bottom: 0;
   cursor: zoom-in;
+}
+
+.snacks:hover {
+  font-weight: bold;
+}
+.asset_1 {
+  top: 120px;
+  left: 5px;
+  position:'absolute';
 }
 
 .rocking {
