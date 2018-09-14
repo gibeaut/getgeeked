@@ -157,9 +157,8 @@ function snackClick() {
     $(".asset_1").animate({
     left: width
   }, 2000, function() {
-    var topNumber = $(".asset_1").offset().top;
 
-    $(".asset_1").css({top: topNumber, left: 5, position:'absolute'});
+        $('.asset_1A').show();
   });
             }
             return false;
