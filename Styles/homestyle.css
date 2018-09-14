@@ -23,7 +23,7 @@ h6 {
   margin-bottom: 20px;
 }
 ul {
-  padding-left: 80px;
+  padding-left: 0;
 }
 .small-text {
   margin-top: 0;
@@ -45,6 +45,7 @@ ul {
     /* justify-content: center;*/
 
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 .title-info {
   width: 1300px;
@@ -84,6 +85,14 @@ padding-left: 80px;
 .activity-list {
   font-family: 'Nunito Sans', sans-serif;
   width: 50%
+}
+.activity-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+.activity-link:hover {
+  color: #b72672;
 }
 .event-details {
   width: 50%;
