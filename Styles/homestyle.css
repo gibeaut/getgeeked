@@ -22,6 +22,9 @@ h6 {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
+ul {
+  padding-left: 0;
+}
 .small-text {
   margin-top: 0;
   font-size: 26px;
@@ -89,7 +92,8 @@ padding-left: 80px;
 }
 
 div.activity-text {
-  padding-left: 16px;
+  position: relative;
+  padding-left: 0;
   display: inline;
   padding-bottom: 50px;
   height: 30px;
