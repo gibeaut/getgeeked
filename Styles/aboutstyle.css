@@ -115,7 +115,7 @@ padding-left: 80px;
   border-radius: 50%;
 }
 .spinning {
-  -webkit-animation: rotation 1s 5 linear;
+  -webkit-animation: rotation 1s 8 linear;
 }
 
 @-webkit-keyframes rotation {

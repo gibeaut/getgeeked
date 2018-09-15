@@ -190,7 +190,7 @@ function headshotClick(element) {
     var broken = sessionStorage.getItem("isBroken");
     if (broken == "true") {
         $(element).addClass("spinning");
-        setTimeout(function() { stopSpinning($(element)) }, 4000);
+        setTimeout(function() { stopSpinning($(element)) }, 8000);
         var $headshot = $('.headshot');
         allSpinning = true;
         $headshot.each(function() {
