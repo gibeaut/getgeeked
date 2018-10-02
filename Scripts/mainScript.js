@@ -6,8 +6,8 @@ var hints = [
     "Tickets, tickets, get them here! Try using email without any fear!",
     "Look to the left, look to the right. Everybody now! Don't let your head spin too much on this one. But it's ok if everyone else's does.",
     "One FAQ is really a riddle, click on the question right in the middle.",
-    "Did you find the bug that rocks?",
-    "Did you find the place with socks?"
+    "Did you find the person that rocks?",
+    "Did you find the place you wear socks?"
 ];
 var totalHints = 8;
 var lastClick = new Date($.now());
@@ -65,6 +65,8 @@ function addListeners() {
     var $answerButton = $('.answer-button');
 
     var $title_image=$('.title-image');
+
+    var $congratulations = $('.congratulations');
 
     //Turn off any existing ticket link
     $tickets.off('click');
@@ -125,6 +127,10 @@ function addListeners() {
         $answerButton.on('click', function() {
             checkAnswer();
         });
+
+        $congratulations.on('click', function() {
+          $congratulations.hide();
+        })
 
     }
     else {
@@ -310,6 +316,9 @@ function checkForm() {
   var $name = $('#name');
   var $nameError = $('#nameError');
 
+  var $invalidEmail = $('#invalidEmail');
+  var $congratulations = $('.congratulations');
+
   if ($name.val() == "") {
     $name.addClass('error');
     $nameError.show();
@@ -329,13 +338,22 @@ function checkForm() {
 
   if (error) return;
 
-  validateEmail($email.val());
+  if (validateEmail($email.val()))
+  {
+    $invalidEmail.hide();
+    $congratulations.show();
+  } else {
+    $invalidEmail.show();
+  }
 }
 
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(String(email).toLowerCase())){
       $('.asset_4').show();
+      return false;
+    } else {
+      return true;
     }
 }
 
@@ -373,7 +391,7 @@ function checkNumberGuess(){
 
 function setQAChange($question, $answer){
   $question.text("What did the 0 say to the 8?");
-  $answer.text("Find the extra letters here and rearrange them to form the answer. There are somee thiings that willl turnn a zeero intto an eight, bbut only one ccan work here.");
+  $answer.html("Find the <strong style='font-size: 17px'>bold</strong> letters here and rearrange them to form the answer. There are som<strong style='font-size: 17px'>e</strong> th<strong style='font-size: 18px'>i</strong>ngs that wil<strong style='font-size: 18px'>l</strong> tur<strong style='font-size: 17px'>n</strong> a z<strong style='font-size: 17px'>e</strong>ro in<strong style='font-size: 17px'>t</strong>o an eight, <strong style='font-size: 17px'>b</strong>ut only one <strong style='font-size: 17px'>c</strong>an work here.");
 }
 
 function showQA(){

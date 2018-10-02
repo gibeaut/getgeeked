@@ -15,6 +15,24 @@ input {
   padding-bottom: 8px;
 }
 
+.congratulations {
+  display: none;
+  position:absolute;
+  top:50%;
+  left:330px;
+  width:400px;  /* adjust as per your needs */
+  height:80px;   /* adjust as per your needs */
+  margin-left:-200px;   /* negative half of width above */
+  margin-top:-200px;   /* negative half of height above */
+  background: #FFFFFF;
+  border: 5px solid #b72672;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 32px;
+}
+
 label {
   display: none;
 }
